@@ -21,12 +21,12 @@ local dependencies = {
         stopVelocity = false
     },
     modules = {
-        ui = replicated_storage.Module.UI:Clone(),
-        store = replicated_storage.App.store:Clone(),
-        player_utils = replicated_storage.Game.PlayerUtils:Clone(),
-        vehicle_data = replicated_storage.Game.Garage.VehicleData:Clone(),
-        character_util = replicated_storage.Game.CharacterUtil:Clone(),
-        paraglide = replicated_storage.Game.Paraglide:Clone()
+        ui = decompile(replicated_storage.Module.UI),
+        store = decompile(replicated_storage.App.store),
+        player_utils = decompile(replicated_storage.Game.PlayerUtils),
+        vehicle_data = decompile(replicated_storage.Game.Garage.VehicleData),
+        character_util = decompile(replicated_storage.Game.CharacterUtil),
+        paraglide = decompile(replicated_storage.Game.Paraglide)
     },
     helicopters = { Heli = true }, -- heli is included in free vehicles
     motorcycles = { Volt = true }, -- volt type is "custom" but works the same as a motorcycle
